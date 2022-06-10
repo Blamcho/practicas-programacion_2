@@ -1,0 +1,31 @@
+# practicas-programacion_2
+practicas segundo semestre
+ recursividad factorial.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+// Abraham Torres
+
+#include <iostream>
+#include  <conio.h>
+
+using namespace std;
+int factorial(int);
+
+int main(){
+
+	cout << "el factorial :" << factorial(9) << endl;
+
+	getch();
+	return 0;
+}
+
+int factorial(int n){ //n es el valor del factorial que va a llamar a la funcion
+	if (n == 0){ //caso base
+		n = 1;
+
+	}
+	else{ // caso general 
+		n = n * factorial(n - 1); // en caso se que no se cumpla el caso base se llama al casogeneral de n = n * gactorial restando 1
+	}
+
+			return n;
+	}
+
